@@ -39,7 +39,7 @@
 
         let div3 = document.createElement('div')
         div3.setAttribute("id", "items")
-        //div3.setAttribute("class","child child Items")
+        //div3.setAttribute("class","child childItems")
         // for multiple class items use classlist
         div3.classList.add('child', 'childItems')
         console.log(div3);
@@ -61,7 +61,7 @@
         //now append >> 1st div inside the body ri8 so,
         document.body.append(div2) //since it is inside the body we use body
         div2.append(div3) //it is inside the div2 not the body so v use only append
-        div3.append(div4, heading)
+        div3.append(div4, heading)//div4 & heading is inside the div3
 
         //we have appendChild() >> only appends one child, whereas append() method append n no of. child
         //div3.appendChild(div4, heading) >> only gives div4 not heading
