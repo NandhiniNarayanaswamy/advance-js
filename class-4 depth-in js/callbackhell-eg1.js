@@ -26,6 +26,22 @@ function processpayment(callback) {
         callback()
     }, 1000)
 }
+/*✅ Where is processPayment() called?
+In this part of your code:
+
+processPayment(function () {
+  console.log("order completed")
+});
+Here:
+
+You're calling processPayment()
+
+And you're passing a function as the argument:
+
+function () {
+  console.log("order completed");
+}
+That function becomes the callback parameter inside processPayment.*/
 
 loginuser("nandhini", "123", function () {
     fetchuserdata(function () {
